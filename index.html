@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <title>MegamanX v3</title>
+</head>
+<body>
+    <div class="container">
+    <img class="intro" src="images/introScreen.png" alt="introScreen"/>  
+
+             <ul class="instructions">
+                <button id="new-game">New Game</button>  
+                <p>Mission: Destroy the Mavericks and protect the city!</p>
+                 <p>Instructions</p>
+                 <li>Shoot: Space Bar</li>     
+                 <li>Move Left: Left Arrow Key</li>     
+                 <li>Move Right: Right Arrow Key</li>     
+                 <li>Jump: Up Arrow Key</li>     
+            </ul>
+    </div>
+
+    <div class="game-board">
+        <canvas id="canvas" width="640" height="480"></canvas>       
+    </div>    
+
+      <script type="text/javascript" src="scripts/bullet.js"></script>
+      <script type="text/javascript" src="scripts/background.js"></script>
+      <script type="text/javascript" src="scripts/player.js"></script>
+      <script type="text/javascript" src="scripts/enemy.js"></script>
+      <script type="text/javascript" src="scripts/game.js"></script>
+      <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
+

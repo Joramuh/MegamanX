@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    display: flex;
+    text-align: center;
+  }  
+
+button {
+    font-size: 22px;
+    font-family: "Monaco";
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+    border: white, 7px,;
+    box-shadow: 0;
+    border-width: 5px;
+    border-radius: 5px; 
+    position: absolute;
+    top: -240px;
+    text-align: left;
+    left: 55%;
+    transform: translate(-50%, -50%);    
+  }
+  
+p {
+    margin: 4px;
+ }
+   
+.intro {
+    width: 101%;
+  }
+
+.game-board {
+      float: left;
+  }
+
+.container{
+    position: relative;
+  }
+
+.instructions {
+    width:370px;
+    font-size: 17px;
+    font-family: "Monaco";    
+    color: white;
+    list-style-type: none;
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+canvas{
+      border: 1px solid black;
+  } /* temporal
+  
+  
+
+  
