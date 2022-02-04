@@ -3,8 +3,7 @@ class Background {
       this.ctx = ctx;
       this.img = new Image()
       this.img.src = "./images/background.png"
-      this.img.isReady = false
-  
+      this.img.isReady = false  
       this.img.onload = () => {
         this.img.isReady = true
       }

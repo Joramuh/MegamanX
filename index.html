@@ -9,23 +9,24 @@
 </head>
 <body>
     <div class="container">
-    <img class="intro" src="images/introScreen.png" alt="introScreen"/>  
+        <div class="game-intro">
+            <img class="intro" src="images/introScreen.png" width="640" height="480" alt="introScreen"/>  
 
-             <ul class="instructions">
-                <button id="new-game">New Game</button>  
-                <p>Mission: Destroy the Mavericks and protect the city!</p>
+             <button id="new-game">Game Start</button>  
+             <ul class="instructions">                
+                <p>Mission: Destroy the enemies and protect the city!</p>
                  <p>Instructions</p>
                  <li>Shoot: Space Bar</li>     
                  <li>Move Left: Left Arrow Key</li>     
                  <li>Move Right: Right Arrow Key</li>     
                  <li>Jump: Up Arrow Key</li>     
             </ul>
+        </div>    
+
+        <div class="game-board">
+            <canvas id="canvas" width="640" height="480"></canvas>       
+        </div>    
     </div>
-
-    <div class="game-board">
-        <canvas id="canvas" width="640" height="480"></canvas>       
-    </div>    
-
       <script type="text/javascript" src="scripts/bullet.js"></script>
       <script type="text/javascript" src="scripts/background.js"></script>
       <script type="text/javascript" src="scripts/player.js"></script>

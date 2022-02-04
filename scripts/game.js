@@ -58,7 +58,7 @@ class Game {
       this.move();
       this.draw();    
       this.bulletCollision();
-      this.checkCollision();
+      this.enemyCheckCollision();
       this.playerCheckCollision();
       this.removeIfExitsCanvas();
       this.bgSFX.play();
@@ -121,7 +121,7 @@ class Game {
       this.ctx.fillStyle = "white";
       this.ctx.font = " bold 24px sans-serif";
       this.ctx.drawImage(this.livesImg, 25,420)
-      this.ctx.fillText(`: ${this.player.hp}`, 88, 455);
+      this.ctx.fillText(` ${this.player.hp}`, 88, 455);
       this.ctx.restore(); 
     }
         
@@ -130,7 +130,7 @@ class Game {
      this.bullet.bullets = this.bullet.removeIfExitsCanvas(this.bullet.bullets);
     }
 
-    bulletCollision(){            // borrar bullets
+    bulletCollision(){            
       let collisions = false;
       if (this.bullet.bullets.some((bullet) =>
       this.enemy.collidesWith(bullet))
@@ -139,7 +139,7 @@ class Game {
       }    
     } 
 
-    checkCollision(){              // cuantos kills
+    enemyCheckCollision(){             
       this.enemy.enemies.forEach(e => {
         if(this.bullet.collidesWith(e)) {
           let index = this.enemy.enemies.indexOf(e);
@@ -199,7 +199,7 @@ class Game {
       this.ctx.textAlign = "center";
       this.ctx.font = "bold 32px sans-serif";
       this.ctx.fillText(
-        `You Win!`, 
+        `Mission Complete! You Win!`, 
         this.ctx.canvas.width / 2,
         this.ctx.canvas.height / 1.1
       );

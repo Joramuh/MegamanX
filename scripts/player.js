@@ -61,12 +61,5 @@ class Player {
           collided = true;
           }
           return collided
-
-        }
-      
-      
+        }            
   }
-
-  /*   ORIGINAL collidesWith  if(this.x >= enemy.x &&
-      this.y  >= enemy.y ){ 
-        */

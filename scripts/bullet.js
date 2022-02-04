@@ -46,8 +46,8 @@ class Bullet {
     collidesWith(enemy){
       let collided = false;
       this.bullets.forEach((bullet) =>{
-        if(bullet.x >= enemy.x &&
-          bullet.y > enemy.y){
+        if(enemy.x <= bullet.x + bullet.width && enemy.x + enemy.width >= bullet.x &&
+          enemy.y <= bullet.y + bullet.height && enemy.y + enemy.height >= bullet.y){
           collided = true;
           let index = this.bullets.indexOf(bullet);
           this.bullets.splice(index,1)
@@ -64,3 +64,5 @@ class Bullet {
    }
   }
 
+  enemy.x <= bullet.x + bullet.width && enemy.x + enemy.width >= bullet.x &&
+            enemy.y <= bullet.y + bullet.height && enemy.y + enemy.height >= bullet.y

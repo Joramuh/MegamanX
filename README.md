@@ -4,7 +4,7 @@
 ## Introduction
 This is my 1st IronHack project, based on the intro stage from the first Megaman X game. Originally lunched on 1993 on the SNES.
 
-The objective is to shoot 30 mavericks to protect the highway of Abel City.
+The objective is to shoot 20 mavericks to protect the highway of Abel City.
 
 ## Gameplay
 You control X and begin with 3 lives. 

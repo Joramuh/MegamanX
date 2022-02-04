@@ -28,7 +28,7 @@ class Enemy {
         if(frameNumber % 35 === 0){
             const enemyPositionX = (590)
             this.enemies.push(this.createEnemy(enemyPositionX))}
-}
+        }
         this.enemies.forEach((goLeft)=> {
             goLeft.x -= goLeft.xv;  
             goLeft.y += goLeft.yv;      
@@ -58,8 +58,7 @@ class Enemy {
     jump(frameNumber){     
        if(frameNumber % 500 === 0){ 
         this.enemies.forEach((enemy)=> { 
-            setInterval(enemy.yv = -2.5, 2100)})
-  
+            setInterval(enemy.yv = -2.5, 2100)})  
        }
     }
 
@@ -75,8 +74,8 @@ class Enemy {
       }  
 
     collidesWith(bullet){
-        return (this.x < bullet.x + bullet.width &&
-               this.x + this.width > bullet.x)
+        return   (this.x <= bullet.x + bullet.width && this.x + this.width >= bullet.x &&
+            this.y <= bullet.y + bullet.height && this.y + this.height >= bullet.y)
       }
 
     collidesWithPlayer(player){
@@ -96,3 +95,4 @@ class Enemy {
     }
 
   }
+
